@@ -8,8 +8,9 @@ jQuery(document).ready(function($) {
   	
     var data = generateDataSet(getHours(json), getFarenheits(json));
     //   console.log(data);
-    // new Chart(ctx).Line(data);
-   var tempChart = new Chart.Line(ctx, {data: data, options: { bezierCurve: true}});
+     var x=new Chart(ctx)
+     x.Line(data);
+   //var tempChart = new Chart.Line(ctx, {data: data, options: { bezierCurve: true}});
 
   });
 });

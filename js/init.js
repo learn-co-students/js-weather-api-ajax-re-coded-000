@@ -7,4 +7,4 @@ jQuery(document).ready(function($) {
     var data = generateDataSet(getHours(json), getFarenheits(json));
     var tempChart = new Chart.Line(ctx, {data: data, options: { bezierCurve: true}});
   });
-});
+})

@@ -1,3 +1,4 @@
+
 function getFarenheits(result){
   return result.hourly_forecast.map(function(itm){
   	return itm.temp.english

@@ -1,11 +1,11 @@
 function getFarenheits(result){
-  return  $.map(result.hourly_forecast,function(itm){
+  return  result.hourly_forecast.map(function(itm){
   	return itm.temp.english
   })
 }
 
 function getHours(result){
-  return  $.map(result.hourly_forecast,function(itm){
+  return  result.hourly_forecast.map(function(itm){
   	return itm.FCTTIME.hour
   })
 }
@@ -13,7 +13,6 @@ function getHours(result){
 function generateDataSet(labels, data) {
   var d= {
   	labels: labels
-
   };
   d['datasets']= [
   {

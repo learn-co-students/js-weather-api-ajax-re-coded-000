@@ -8,3 +8,7 @@ jQuery(document).ready(function($) {
     var tempChart = new Chart.Line(ctx, {data: data, options: { bezierCurve: true}});
   });
 });
+
+
+
+
